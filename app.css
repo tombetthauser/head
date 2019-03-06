@@ -1,0 +1,26 @@
+body {
+	background-color: white;
+	overflow: hidden;
+}
+
+img {
+	width: 90%;
+	display: block;
+	margin: auto; 
+}
+
+#text {
+	background-color: none;
+	position: absolute;
+	display: block;
+	width: 50%;
+	margin-left: 10%;
+	margin-top: -100px;
+}
+
+#text p {
+	font-size: .8vw;
+	color: #000;
+	font-weight: 50;
+	font-family: sans-serif;
+}
