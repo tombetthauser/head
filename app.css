@@ -1,26 +1,79 @@
+* {
+	background-color: white;
+}
+
 body {
 	background-color: white;
 	overflow: hidden;
 }
 
-img {
+#image {
 	width: 90%;
 	display: block;
 	margin: auto; 
+}
+
+#image2 {
+	width: 12.5%;
+	min-width: 85px;
+	position: fixed;
+	bottom: 5%;
+	right: 5%;
+	box-shadow: 4px 5px 4px rgba(0,0,0,.3);
+	-webkit-filter: blur(2px);
+	filter: blur(2px);
+	transition: 1s;
+	cursor: pointer;
+}
+
+#image2:hover {
+	-webkit-filter: blur(0px);
+	filter: blur(0px);
+	transition: 1s;
+	cursor: pointer;
 }
 
 #text {
 	background-color: none;
 	position: absolute;
 	display: block;
-	width: 50%;
-	margin-left: 10%;
-	margin-top: -100px;
-}
-
-#text p {
+	width: 35%;
 	font-size: .8vw;
 	color: #000;
 	font-weight: 50;
 	font-family: sans-serif;
+	font-size: .8vw;
+	color: #000;
+	font-weight: 50;
+	font-family: sans-serif;
+	background-color: rgba(0,0,0,0);
+}
+
+.leftPosition {
+	margin-left: -2500%;
+}
+
+.rightPosition {
+	margin-left: 2500%;
+}
+
+.topPosition {
+	margin-top: -30000px;
+}
+
+.bottomPosition {
+	margin-top: -15px;
+}
+
+.transtionSlow {
+	transition: 1000s;
+	/*transition: 3000s;
+*/}
+
+.transtionFast {
+	transition: 0s;
+}
+
+.leftPositionOnLoad {
+	margin-left: 10%;
 }
